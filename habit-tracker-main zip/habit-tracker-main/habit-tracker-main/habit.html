@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./habit.css" />
+    <title>Habit Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="../WF__3_-removebg-preview.png">
+  </head>
+  <body>
+    <p id="typew"><span class="typed-text"></span><span class="cursor blink">&nbsp;</span></p>
+    <div class="container">
+      <h2 >HABITS</h2>
+      
+      <form class="add-habit">
+      
+          <input
+          class="habit"
+          type="text"
+          name="habit"
+          placeholder="Enter Habit Name"
+          required
+        />
+          
+        
+
+
+
+
+       <input
+        class="habit"
+          type="number"
+          name="reps"
+          placeholder="Number of Repetitions"
+          min="1"
+          required
+        />
+        <div class="frequency">
+          <label for="timeframe">Frequency: </label>
+          <select name="timeframe" id="timeframe">
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Yearly">Yearly</option>
+          </select>
+        </div>
+        <input class="btn" type="submit" value="+ Add Habit" />
+      </form>
+
+      <ul class="habits">
+        <li>Loading...</li>
+      </ul>
+    </div>
+
+    <script src="./habit.js"></script>
+  </body>
+</html>
