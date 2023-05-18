@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+background-color: black;
+font-family: 'Poppins', sans-serif;
+align-items: center;
+
+}
+h1{
+	color: white;
+	margin-left: 40%;
+	font-size: 50px;
+
+
+}
+
+.kanban {
+	display: flex;
+	padding: 30px;
+	width: 750px;
+	background: #353935;
+	border-radius: 5px;
+	margin-top: 11%;
+	margin-left: 22%;
+	border: solid 1px white;
+}
+
+.kanban * {
+	font-family: sans-serif;
+}
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: white;
+	user-select: none;
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border: solid 1px white;
+}
